@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,19 +14,19 @@
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family: Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body{
-      background: linear-gradient(to right, #dbeafe, #f0f9ff);
-      color:#222;
+      background: linear-gradient(to right, #ffe4ff, #fff0f59b);
+      color:#5c4b51b5;
     }
 
-    /* HEADER */
+
 
     header{
-      background:#1e3a8a;
-      color:white;
+      background:#f8a5c2;
+      color:rgba(255, 255, 255, 0.633);
       padding:20px;
       display:flex;
       justify-content:space-between;
@@ -32,22 +34,30 @@
     }
 
     .logo{
-      font-size:28px;
-      font-weight:bold;
+     width:70px;
+  height:70px;
+  border-radius:50%;
+  background:linear-gradient(45deg,#25ebe5a4,#06b6d4);
+  color:rgba(255, 255, 255, 0.353);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  font-weight:bold;
+  font-family: 'Great Vibes', cursive;
     }
 
     nav a{
       text-decoration:none;
-      color:white;
+      color:rgba(255, 255, 255, 0.627);
       margin-left:20px;
       transition:0.3s;
     }
 
     nav a:hover{
-      color:yellow;
+      color:rgb(0, 217, 255);
     }
 
-    /* HERO */
 
     .hero{
       display:flex;
@@ -62,81 +72,168 @@
     }
 
     .hero-text h1{
-      font-size:50px;
-      color:#1e3a8a;
+      font-family:'Great Vibes', cursive;
+      font-size:70px;
+      color:#d63384;
+      letter-spacing:2px;
+      font-weight:700;
       margin-bottom:10px;
     }
 
     .hero-text h3{
+      font-family:'Pcifico', cursive;
+      font-size:24px;
+      font-weight:500;
+      letter-spacing:1px;
       margin-bottom:20px;
-      color:#2563eb;
+      color:#ff69b45a;
     }
 
     .hero-text p{
+      font-family:'Great Vibes', cursive;
+      font-size:25px;
       line-height:1.8;
     }
 
     .btn{
+      font-family:'Great Vibes', cursive;
       display:inline-block;
       margin-top:25px;
       padding:12px 25px;
-      background:#2563eb;
-      color:white;
+      background:#ff85a2ac;
+      color:rgba(255, 255, 255, 0.51);
       text-decoration:none;
       border-radius:30px;
       transition:0.3s;
     }
 
     .btn:hover{
-      background:#1e40af;
+      background:#ff5c8a;
       transform:scale(1.05);
     }
 
-    /* PROFILE */
+  
 
     .profile{
       width:250px;
       height:250px;
-      background:#93c5fd;
       border-radius:20px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      font-weight:bold;
-      color:#1e3a8a;
-      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0, 0, 0, 0.553);
+    }
+   
+    .profile img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
-    /* ABOUT */
+   .about{
+  background:#fff5ff32;
+  padding:80px 10%;
+}
 
-    .about{
-      background:white;
-      padding:80px 10%;
-      text-align:center;
-    }
+.about-container{
+  display:flex;
+  align-items:center; 
+  gap:60px;
+}
 
-    .about h2{
-      font-size:35px;
-      margin-bottom:20px;
-      color:#1e3a8a;
-    }
+.about{
+  background:rgba(255, 255, 255, 0.262);
+  padding:80px 10%;
+}
 
-    .about p{
-      max-width:700px;
-      margin:auto;
-      line-height:2;
-    }
+.about-container{
+  display:flex;
+  align-items:center;
+  gap:60px;
+}
 
-    /* SKILLS */
+.about-box{
+  width:280px;
+  height:280px;
+  border:3px solid #8a1e7a;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
+.about-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-text h2{
+  font-family:'Great Vibes', cursive;
+  font-size:35px;
+  color:#8a1e5d6e;
+  margin-bottom:20px;
+}
+
+.about-text p{
+  font-family:'Great Vibes', cursive;
+  font-size:18px;
+  line-height:1.8;
+}
+.about{
+  background:#fff5f89b;
+  padding:80px 10%;
+}
+
+.about-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:50px;
+}
+
+.about-text{
+  flex:1;
+  text-align:center;
+}
+
+.about-text h2{
+  font-family:'Great Vibes', cursive;
+  font-size:35px;
+  color:#8a1e4f8e;
+  margin-bottom:20px;
+}
+
+.about-text p{
+  font-family:'Picifico', cursive;
+  font-size:25px;
+  line-height:1.9em;
+}
+
+.about-box{
+  width:180px;
+  height:180px;
+  border:3px solid #621e8a6e;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
     .skills{
       padding:80px 10%;
     }
 
     .skills h2{
+      font-family:'Great Vibes', cursive;
       text-align:center;
       margin-bottom:40px;
-      color:#1e3a8a;
+      color:#8a1e684f;
       font-size:35px;
     }
 
@@ -148,9 +245,10 @@
     }
 
     .card{
-      width:220px;
-      background:white;
-      padding:30px;
+      font-family:'Pacifico', cursive;
+      width: 330px;
+      background:#fff0ffd1;
+      padding: 35px;
       border-radius:15px;
       text-align:center;
       transition:0.4s;
@@ -159,21 +257,19 @@
 
     .card:hover{
       transform:translateY(-10px);
-      background:#2563eb;
+      background:#f8a5c270;
       color:white;
     }
 
-    /* CONTACT */
-
     .contact{
-      background:#eff6ff;
+      background:#ffeefc31;
       padding:80px 10%;
       text-align:center;
     }
 
     .contact h2{
       font-size:35px;
-      color:#1e3a8a;
+      color:#781e8a5c;
       margin-bottom:20px;
     }
 
@@ -184,22 +280,18 @@
     .socials span{
       margin:10px;
       padding:10px 20px;
-      background:#2563eb;
-      color:white;
+      background:#eb25a9f4;
+      color:rgba(255, 255, 255, 0.393);
       border-radius:20px;
       display:inline-block;
     }
 
-    /* FOOTER */
-
     footer{
-      background:#1e3a8a;
-      color:white;
+      background:#f8a5eeb4;
+      color:rgba(255, 255, 255, 0.478);
       text-align:center;
       padding:20px;
     }
-
-    /* RESPONSIVE */
 
     @media(max-width:768px){
 
@@ -220,13 +312,9 @@
 
 <body>
 
-  <!-- HEADER -->
-
   <header>
 
-    <div class="logo">
-      Anna Leah
-    </div>
+    <div class="logo">AL</div>
 
     <nav>
       <a href="#home">Home</a>
@@ -237,8 +325,6 @@
 
   </header>
 
-  <!-- HERO -->
-
   <section class="hero" id="home">
 
     <div class="hero-text">
@@ -248,9 +334,7 @@
       <h3>BSIT Student</h3>
 
       <p>
-        Passionate about web development,
-        designing websites, and learning
-        new technologies in Information Technology.
+       20 years old, living in Purok 8, Poblacion, Trento, Agusan del Sur.
       </p>
 
       <a href="#" class="btn" onclick="welcome()">
@@ -260,28 +344,40 @@
     </div>
 
     <div class="profile">
-      PROFILE PICTURE
+        <img src="anna.jpg.jpg" alt="Anna Leah">
     </div>
 
   </section>
 
-  <!-- ABOUT -->
+ <section class="about" id="about">
 
-  <section class="about" id="about">
+  <div class="about-container">
 
-    <h2>About Me</h2>
+    <div class="about-box">
+      <img src="anna.jpg.jpg" alt="Anna Leah">
+    </div>
 
-    <p>
-      I am a BSIT student who loves creating
-      modern and responsive websites. I enjoy
-      improving my programming skills and learning
-      different technologies that can help me become
-      a successful web developer in the future.
-    </p>
+    <div class="about-text">
 
-  </section>
+      <h2>About Me</h2>
 
-  <!-- SKILLS -->
+      <p>
+        I am a BSIT student who loves creating modern and responsive
+        websites. I enjoy improving my programming skills and learning
+        different technologies that can help me become a successful
+        web developer in the future.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="about-box">
+    <img src="leah.jpg.jpg" alt="Anna Leah">
+  </div>
+
+  <div>
+</section>
 
   <section class="skills" id="skills">
 
@@ -294,15 +390,63 @@
       </div>
 
       <div class="card">
-        <script>
+         <script>
 
-    function welcome(){
+         </script>
 
-      alert("Welcome to Anna Leah's Portfolio!");
+      Responsive Design
 
-    }
+  
+
 
   </script>
 
 </body>
 </html>
+</div>
+
+      <div class="card">
+        JavaScript
+      </div>
+
+      <div class="card">
+      CSS
+      </div>
+
+      <div class="card">
+        Login System
+      </div>
+
+      <div class="card">
+        Cooking
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Email: annataniola@gmail.com</p>
+
+    <p>GitHub: github.com/annaleahreal</p>
+
+    <div class="socials">
+
+      <span>Facebook</span>
+      <span>Instagram</span>
+      <span>LinkedIn</span>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>
+      © 2026 Anna Leah Portfolio
+    </p>
+
+  </footer>
